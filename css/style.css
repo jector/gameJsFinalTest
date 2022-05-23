@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
+
+}
+body{
+    height: 100vh;
+    background: linear-gradient(#13395e, rgb(48, 95, 131)) 0 100% no-repeat;
+    background-size: 100% 50%;
+}
+.topPoints{
+    position: absolute;
+    right: -50px;
+    bottom: 65px;
+    color: rgba(0,0,0,.05);
+    font-family: 'Black Ops One', cursive;
+    font-size: 400px;
+    z-index: 1;
+    cursor: default;
+    line-height: 0;
+}
+h1{
+    font-family: 'Black Ops One', cursive;
+    font-size: 45px;
+    letter-spacing: 2px;
+    color: #13395e;
+
+}
+
+.header p{
+    color: #ef7930;
+    margin: -18px 0 0;
+    position: relative;
+    text-align: right;
+    padding: 0 3px;
+    font-family: 'Oswald', sans-serif;
+}
+form{
+    position: relative;
+    z-index: 3;
+}
+button{
+    background: #13395e;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ef7930;
+    border: 1px solid #13395e;
+    padding: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 36px 0 16px;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.4);
+    transition:  .3s ease-in-out;
+    font-family: 'Questrial', sans-serif;
+}
+button:hover{
+    box-shadow: 2px 2px 7px rgba(0,0,0,.3);
+    color: #fc9454;
+}
+#tableDices{
+    position: relative;
+    z-index: 3;
+}
+#tableDices div span {
+    display: none;
+}
+#tableDices div{
+    display: inline-block;
+    font-size: 21px;
+    padding: 5px;
+    margin: 5px;
+    width: 125px;
+    height: 125px;
+    vertical-align: middle;
+    transition:  .45s ease-in-out;
+}
+.exploded{
+    color: whitesmoke;
+    transition:  .45s ease-in-out;
+    opacity: .4;
+ }
+.exploded img{
+    animation: none;
+}
+.contentDices{
+    width: 800px;
+    background: #fff;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 15px 35px rgba(50,50,50,.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+ .oneDice{
+     width: 100%;
+ }
+.endGame{
+    overflow: hidden;
+    height: 0px;
+    transition:  .25s ease-in-out;
+    background: #ec4444;
+    width: 120%;
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-family: 'Black Ops One', cursive;
+}
+.showGO{
+    height: 50px;
+    padding: 5px 0;
+}
+.contentScore{
+    border-bottom: 1px solid #13395e;
+    width: 94%;
+    padding: 5px 0 12px;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 25px;
+    color: #13395e;
+}
+.contentScore span{
+    color: #ef7930;
+
+    font-family: 'Black Ops One', cursive;
+}
+.shake{
+    animation: shake 0.8s infinite ease-in-out;
+    transition:  .45s ease-in-out;
+}
+@keyframes shake{
+    0%{
+        transform: rotate(16deg);
+    }
+    50%{
+        transform: rotate(-16deg);
+    }
+    65%{
+        transform: rotate(16deg);
+    }
+    85%{
+        transform: rotate(-16deg);
+    }
+    100%{
+        transform: rotate(16deg);
+    }
+}
